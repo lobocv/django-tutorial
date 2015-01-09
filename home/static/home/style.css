@@ -1,33 +1,53 @@
-li a{
-	color: green;
+a.nav{
+	color: red;
+}
+
+a.article {
+	color: #00FFAA;
 }
 
 h1.main_title {
 	text-align: center;
 	text-decoration: underline;
 	font-size: 2.5em;
-	text-shadow: 1px 1px 5px gold
+	text-shadow: 1px 1px 5px gold;
 }
 
-div {
-    width: 320px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0; 
+h2.article {
+	text-align: left;
+	text-decoration: underline;
+	font-size: 1.2em;
+	margin-left: inherit;
+	margin-right: inherit;
 }
+
+
+div.nav {
+    display: flex;
+    justify-content: space-around;
+	background-color: black;
+    padding: 10px;
+    border: 2px solid white;
+	font-size: 1.4em;
+}
+
+div.article {
+	background-color: black;
+    padding: 1%;
+    border: 2px solid white;
+}
+
 
 p {
-	border-style: solid;
-	border-width: 2px;
-	margin-left: 20%;
-	margin-right: 20%;
 	padding-left: .5%;
 	padding-right: .5%;
 	font-size: 1.1em;
 	color: white;
-	background-color: black;
+	background-color: inherit;
 }
 body {
+	margin-left: 20%;
+	margin-right: 20%;
 	font-size: 100%;
 	background: black url("images/background.jpg") repeat left top;
 }
