@@ -1,3 +1,8 @@
+/* This will override all elements. Values that are tagged !important can only be overridden with !important*/
+* {
+   font-family: Verdana !important;
+}
+
 a.nav{
 	color: red;
 }
@@ -51,3 +56,4 @@ body {
 	font-size: 100%;
 	background: black url("images/background.jpg") repeat left top;
 }
+
