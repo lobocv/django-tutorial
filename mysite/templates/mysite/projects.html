@@ -1,0 +1,40 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'mysite/style.css' %}" />
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+
+<head>
+    <title>The Wolf Den</title>           
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" media="screen" />
+</head>
+	
+<body>
+
+<h1 class='main_title'> Projects </h1>
+<div class="nav">
+	<a class="nav" href="/">Home</a>
+	<a class="nav" href="/projects">Projects</a>
+	<a class="nav" href="/about/">About</a>
+	<a class="nav" href="/contact/">Contact</a>
+</div>
+
+<hr>
+<div class='article'>
+<h2 class='article'><a class='article' href="https://www.github.com/lobocv/pyperform">PyPerform</a></h2>
+	<p>PyPerform is a convenient way to performance test python code. </p>
+</div>
+<hr>
+<div class='article'>
+<h2 class='article'><a class='article' href="https://www.github.com/lobocv/eventdispatcher">EventDispatcher</a></h2>
+	<p>An event dispatcher framework inspired by the Kivy project.</p>
+</div>
+
+
+
+
+
+</body>
+</html>

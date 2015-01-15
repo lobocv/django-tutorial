@@ -1,12 +1,11 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from home import views
+from mysite import views
 
 urlpatterns = patterns('',
-    #url(r'^$', 'home.views.index'),	
-	url(r'^$', include('home.urls', namespace="home")),
-	url(r'^about/', include('about.urls', namespace="about")),
-	url(r'^polls/', include('polls.urls', namespace="polls")),
-	url(r'^projects/', include('projects.urls', namespace="projects")),
+    url(r'^$', 'mysite.views.index'),	
+	url(r'^projects/', 'mysite.views.projects'),	
+	url(r'^about/', 'mysite.views.about'),	
+	url(r'^contact/', 'mysite.views.contact'),	
     url(r'^admin/', include(admin.site.urls)),
 )
