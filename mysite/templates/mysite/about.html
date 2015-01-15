@@ -1,19 +1,5 @@
 {% load staticfiles %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'mysite/style.css' %}" />
-
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="en">
-
-<head>
-    <title>The Wolf Den</title>           
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" media="screen" />
-</head>
-	
-<body>
-
-{% include "includes/navigation.html" %}
+{% include "includes/base_template.html" %}
 
 <hr>
 <div class='article'>
