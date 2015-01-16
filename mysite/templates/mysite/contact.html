@@ -1,9 +1,48 @@
 {% load staticfiles %}
 {% include "includes/base_template.html" %}
 
-<hr>
-<div class='article'>
-	<p>Please do not contact me. </p>
+
+<script>
+function expand_article() {
+    var image = document.getElementById('pyperform');
+    image.hidden = !image.hidden
+}
+
+function check_email_body() {
+    var textarea = document.getElementById('email_body');
+    var button = document.getElementById('send');
+    var container = document.getElementById('emailcontainer');
+    if (textarea.value == '') {
+        window.alert('Email body is empty!');
+    } else {
+        container.innerHTML = '<p>An email has been sent. Thank you!</p>';
+
+    }
+}
+</script>
+
+
+<div class="article" id="emailcontainer">
+    <h2 class="article">Email</h2>
+    <div class="email_info">
+        <div class="email_info_field">
+            <label class="email_info">From:</label>
+            <textarea id="from" class="email_info"></textarea>
+        </div>
+        <div class="email_info_field">
+            <label class="email_info">Subject:</label>
+            <textarea id="subject" class="email_info"></textarea>
+        </div>
+        <div class="email_info_field">
+            <label class="email_info">Phone Number:</label>
+            <textarea id="subject" class="email_info"></textarea>
+        </div>
+
+
+    <textarea class="email_body" id="email_body"></textarea>
+    <br>
+    <button type="button" id="send" onclick="check_email_body()">Send</button>
+    </div>
 </div>
 
 
