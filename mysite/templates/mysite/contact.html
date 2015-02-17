@@ -21,30 +21,34 @@ function check_email_body() {
 }
 </script>
 
+<div id='wrap'>
+	<div id="content">
+		<h2>Email</h2>
+		<div class="email_info">
+		    <div class="email_info_field">
+		        <label class="email_info">From:</label>
+		        <textarea id="from" class="email_info"></textarea>
+		    </div>
+		    <div class="email_info_field">
+		        <label class="email_info">Email:</label>
+		        <textarea id="email" class="email_info" required></textarea>
+		    </div>
+		    <div class="email_info_field">
+		        <label class="email_info">Subject:</label>
+		        <textarea id="subject" class="email_info"></textarea>
+		    </div>
+		    <div class="email_info_field">
+		        <label class="email_info">Phone Number:</label>
+		        <textarea id="phone number" class="email_info"></textarea>
+		    </div>
 
-<div class="article" id="emailcontainer">
-    <h2 class="article">Email</h2>
-    <div class="email_info">
-        <div class="email_info_field">
-            <label class="email_info">From:</label>
-            <textarea id="from" class="email_info"></textarea>
-        </div>
-        <div class="email_info_field">
-            <label class="email_info">Subject:</label>
-            <textarea id="subject" class="email_info"></textarea>
-        </div>
-        <div class="email_info_field">
-            <label class="email_info">Phone Number:</label>
-            <textarea id="subject" class="email_info"></textarea>
-        </div>
 
+		<textarea class="email_body" id="email_body"></textarea>
+		<br>
+		<button type="button" id="send" onclick="check_email_body()">Send</button>
+	</div>
 
-    <textarea class="email_body" id="email_body"></textarea>
-    <br>
-    <button type="button" id="send" onclick="check_email_body()">Send</button>
-    </div>
 </div>
-
 
 
 
