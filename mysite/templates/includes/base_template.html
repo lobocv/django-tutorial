@@ -13,18 +13,18 @@
 
 <body>
 
-<h1 class='main_title'> {{page_title}}</h1>
+<!--<h1 class='main_title'> {{page_title}}</h1>-->
 <div id="wrap">
 		<div id="header">
-			<img src="{% static "mysite/images/header.jpg" %}" width="768" height="120" alt="Time To Rest" />
+			<img src="{% static "mysite/images/header.jpg" %}" width="100%" alt="Welcome" />
 		</div>
 
 	<div id="navigation">
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/projects">Projects</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/contact">Contact</a></li>
+			<li><a class="{% if active_tab == 'tab1' %} active{% endif %}" href="/">Home</a></li>
+			<li><a class="{% if active_tab == 'tab2' %} active{% endif %}" href="/projects">Projects</a></li>
+			<li><a class="{% if active_tab == 'tab3' %} active{% endif %}" href="/about">About</a></li>
+			<li><a class="{% if active_tab == 'tab4' %} active{% endif %}" href="/contact">Contact</a></li>
 		</ul>
 	</div>
 </div>

@@ -27,7 +27,7 @@ h1 a {
 /* Header */
 
 #header {
-	height:120px;
+	height:220px;
 	}
 	
 /* Navigation Bar */
@@ -60,6 +60,8 @@ div#navigation li a {
 	color:#EDE6EE;
 }
 div#navigation li a:link {
+    font-size: 14px;
+    text-shadow: 1px 1px #222222;
     color: #FFF:
 }
 div#navigation li a:visited {
@@ -67,7 +69,12 @@ div#navigation li a:visited {
 }
 div#navigation li a:hover {
     color: #FFF;
-	background-image:url(images/bg_navigationhover.gif);
+	background-image:url(images/bg_navigation_hover.gif);
+}
+
+div#navigation a.active {
+    font-size: 18px !important;
+    font-weight: bold;
 }
 
 /* Email Form */
@@ -123,7 +130,8 @@ div.email_info_field {
 	background-image:url(images/bg_content.gif);
 	background-repeat:no-repeat;
 	background-color:#3E3E3E;
-	}
+}
+
 #content a {
 	color:#D9FF76;
 	}
