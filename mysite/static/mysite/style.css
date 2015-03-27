@@ -123,6 +123,7 @@ div.email_info_field {
 
 #content {
 	text-align:left;
+	min-height: 400px;
 	font-size:12px;
 	font-family:Geneva, Arial, Helvetica, sans-serif;
 	padding:12px 10px;
@@ -141,7 +142,26 @@ div.email_info_field {
 #content a:visited {
 	color:#D3DABC;
 	}
-	
+
+/* Article*/
+
+div.article {
+    padding: 10px;
+    border: 1px solid #222222;
+}
+
+h2.article {
+    text-shadow: 2px 2px #222222;
+
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
 /* Footer */
 
 #footer {
@@ -164,8 +184,8 @@ div.email_info_field {
 
 #footer hr {
     width: 95%;
-	background-color:#333333;
-	border-color:#333333;
+	background-color:#222222;
+	border-color:#222222;
 	height: 1px;
 	border: 1px;
 	}
