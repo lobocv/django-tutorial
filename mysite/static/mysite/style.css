@@ -161,3 +161,11 @@ div.email_info_field {
 #footer a:hover {
 	color:#D9FF76;
 	}
+
+#footer hr {
+    width: 95%;
+	background-color:#333333;
+	border-color:#333333;
+	height: 1px;
+	border: 1px;
+	}
